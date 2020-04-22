@@ -1,0 +1,21 @@
+#+TITLE: ProtonMail Bridge spec file
+
+Currently the build won't work. Output at the end of the build
+
+#+BEGIN_SRC
+Provides: application() application(protonmail-bridge.desktop) metainfo() metainfo(protonmail-bridge.appdata.xml) protonmail-bridge = 1.2.6-1.fc32 protonmail-bridge(x86-64) = 1.2.6-1.fc32
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: libGL.so.1()(64bit) libQt5Core.so.5()(64bit) libQt5Core.so.5(Qt_5)(64bit) libQt5Core.so.5(Qt_5.13)(64bit) libQt5Gui.so.5()(64bit) libQt5Gui.so.5(Qt_5)(64bit) libQt5Network.so.5()(64bit) libQt5Qml.so.5()(64bit) libQt5Qml.so.5(Qt_5)(64bit) libQt5Svg.so.5()(64bit) libQt5Widgets.so.5()(64bit) libQt5Widgets.so.5(Qt_5)(64bit) libc.so.6()(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libgcc_s.so.1()(64bit) libgcc_s.so.1(GCC_3.0)(64bit) libgio-2.0.so.0()(64bit) libglib-2.0.so.0()(64bit) libgobject-2.0.so.0()(64bit) libm.so.6()(64bit) libpthread.so.0()(64bit) libpthread.so.0(GLIBC_2.2.5)(64bit) libpthread.so.0(GLIBC_2.3.2)(64bit) libsecret-1.so.0()(64bit) libstdc++.so.6()(64bit) libstdc++.so.6(CXXABI_1.3)(64bit) libstdc++.so.6(GLIBCXX_3.4)(64bit) rtld(GNU_HASH)
+#+END_SRC
+
+Provided by
+#+BEGIN_SRC
+libglvnd-glx
+qt5-qtbase-gui
+qt5-qtdeclarative
+qt5-qtsvg
+glibc
+libgcc
+glib2
+libstdc++
+#+END_SRC

@@ -32,7 +32,7 @@ export PATH=~/go/bin:$PATH
 %make_build build VERSION=%{version}
 
 %install
-install -Dpm 744 cmd/Desktop-Bridge/deploy/linux/proton-bridge-%{commit} %{buildroot}%{_bindir}/%{name}
+install -Dpm 755 cmd/Desktop-Bridge/deploy/linux/proton-bridge-%{commit} %{buildroot}%{_bindir}/%{name}
 install -Dpm 644 cmd/Desktop-Bridge/deploy/linux/logo.svg %{buildroot}/%{_datadir}/icons/hicolor/scalable/apps/%{name}.svg
 install -Dpm 644 %{SOURCE1} %{buildroot}/%{_datadir}/appdata/%{name}.appdata.xml
 install -Dpm 644 %{SOURCE2} %{buildroot}/%{_datadir}/applications/%{name}.desktop
